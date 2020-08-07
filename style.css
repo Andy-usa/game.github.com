@@ -1,0 +1,73 @@
+#igra {
+	 background-image: url(ring.jpg); 
+	 width: 600px;
+	 height: 400px;
+	 margin: auto;
+	 position: relative;
+	 border: solid #0101DF;
+}
+
+#ball {
+	background: #fff;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	position: absolute;
+	top: 175px;
+	left: 275px;
+	/*top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	margin: auto;*/
+	display: none;
+}
+
+#ball span {
+	font-size: 10px;
+ margin-left: 17px;
+ line-height: 50px;
+}
+
+#stars {
+ font-size: 46px;
+ color: #FF0000;
+ font-weight: bold;
+ position: absolute;
+ left: 24px;
+ top: 0px;
+ display: none;
+}
+
+#lifes {
+	position: absolute;
+	top: 12px;
+ right: 24px;
+ display: none;
+}
+
+#lifes span {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	border: 3px solid #fff;
+	background: #FF00FF;
+	display: block;
+	float: left;
+}
+
+#start-block {
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#start-block button {
+	margin: 100px auto;
+	display: block;
+	padding: 40px 80px;
+	font-size: 34px;
+}
