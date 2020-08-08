@@ -10,24 +10,24 @@ var CHASY; //YOU NEED TO DEFINE TIMER ID IN THE GLOBAL SCOPE IF YOU WANT TO ACCE
 
 var colorBall = "yellow";
 var i = 0; //счет игры
-ball.onclick = function () { //выполняем функцию
+ball.addEventListener("click", function () { //выполняем функцию
     i = i + 1;  //Увелииваем счет игры
     stars.innerText = i; //выводим количество счета игры с заменой счета
     ball.style.top = ball.offsetTop + 10 + "px"; //Меняем отступ шарика от верхней границі на 10 пикселей при каждом клике на него
     // ball.style.width = ball.clientWidth + 10 + "px";
-    if (colorBall == "yellow") { //если colorball равен yellow - выводим желтый цвет
+    if (colorBall === "yellow") { //если colorball равен yellow - выводим желтый цвет
         ball.style.background = "#F7FE2E";//Обращаемся к стилям мячика через переменную ball
         colorBall = "blue"; //если colorball синий
     } else { // иначе  выводим синий цвет
         ball.style.background = "#0000FF";//Обращаемся к стилям мячика через переменную ball
         colorBall = "yellow";
     }
-    if (i == 5) { //Условие если переменная мячика при 15 клике больше
-        finish(); // Условием вызываем функию finish - конец игры
+    if (i === 5) { //Условие если переменная мячика при 15 клике больше
         stars.innerText = i; // выводит в логи после окончания игры кол-во кликов по мячику
         console.log(i);
+        finish(); // Условием вызываем функию finish - конец игры
     }
-}
+});
 
 //var end = finish;
 function finish() { //Конец игры
